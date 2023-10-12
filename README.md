@@ -1,4 +1,9 @@
-[![logo](logo.jpg)](https://codesandbox.io/s/bfplr)
+<div align="center">
+  <!-- Light mode only logo -->
+  <img src="logo.png#gh-light-mode-only" alt="logo" width="280" />   
+  <!-- Dark mode only logo -->
+  <img src="logo-dark-mode.png#gh-dark-mode-only" alt="logo" width="280" />
+</div>
 
 [![Version](https://img.shields.io/npm/v/@gsimone/zwei?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@gsimone/zwei)
 [![Downloads](https://img.shields.io/npm/dt/@gsimone/zwei.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@gsimone/zwei)
