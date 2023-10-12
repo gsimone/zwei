@@ -10,7 +10,9 @@
 [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.com/channels/740090768164651008/741751532592038022)
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?&message=Open%20in%20%20Codespaces&style=flat&colorA=000000&colorB=000000&label=GitHub&logo=github&logoColor=ffffff)](https://github.com/codespaces/new?template_repository=pmndrs%2Fdrei)
 
-A shrinking collection of useful helpers and simple ready-made abstractions for [@react-three/fiber](https://github.com/pmndrs/react-three-fiber). If you make a component that is generic enough to be useful to everyone, think about [CONTRIBUTING](CONTRIBUTING.md)!
+A shrinking collection of useful helpers and simple ready-made abstractions for [@react-three/fiber](https://github.com/pmndrs/react-three-fiber). 
+
+If you make a component that is generic enough to be useful to everyone, think about [CONTRIBUTING to Drei instead](https://github.com/pmndrs/drei/blob/master/CONTRIBUTING.md)!
 
 ```bash
 npm install @gsimone/zwei
@@ -43,14 +45,6 @@ This fork does not support react-native.
         <li><a href="#controls">Controls</a></li>
         <ul>
           <li><a href="#cameracontrols">CameraControls</a></li>
-        </ul>
-        <li><a href="#gizmos">Gizmos</a></li>
-        <ul>
-          <li><a href="#gizmohelper">GizmoHelper</a></li>
-          <li><a href="#pivotcontrols">PivotControls</a></li>
-          <li><a href="#transformcontrols">TransformControls</a></li>
-          <li><a href="#grid">Grid</a></li>
-          <li><a href="#usehelper">useHelper</a></li>
         </ul>
         <li><a href="#abstractions">Abstractions</a></li>
         <ul>
@@ -114,22 +108,14 @@ This fork does not support react-native.
           <li><a href="#adaptiveevents">AdaptiveEvents</a></li>
           <li><a href="#performancemonitor">PerformanceMonitor</a></li>          
         </ul>
-        <li><a href="#portals">Portals</a></li>        
-        <ul>
-          <li><a href="#hud">Hud</a></li>
-          <li><a href="#view">View</a></li>
-          <li><a href="#rendertexture">RenderTexture</a></li>
-          <li><a href="#rendercubetexture">RenderCubeTexture</a></li>
-        </ul>
       </ul>
     </td>
     <td valign="top">
       <ul>
-        <li><a href="#shapes">Shapes</a></li>
+        <li><a href="#shapes">Geometries</a></li>
         <ul>
           <li><a href="#roundedbox">RoundedBox</a></li>
           <li><a href="#screenquad">Screenquad</a></li>
-          <li><a href="#line">Line</a></li>
         </ul>
         <li><a href="#staging">Staging</a></li>
         <ul>
@@ -1040,26 +1026,6 @@ return <>
 </>
 ```
 
-#### ComputedAttribute
-
-[![](https://img.shields.io/badge/-storybook-%23ff69b4)](https://drei.vercel.app/?path=/story/misc-sampler--sampler-weight-st)
-
-Create and attach an attribute declaratively.
-
-```tsx
-<sphereGeometry>
-  <ComputedAttribute
-    // attribute will be added to the geometry with this name
-    name="my-attribute-name"
-    compute={(geometry) => {
-      // ...someLogic;
-      return new THREE.BufferAttribute([1, 2, 3], 1)
-    }}
-    // you can pass any BufferAttribute prop to this component, eg.
-    usage={THREE.StaticReadUsage}
-  />
-</sphereGeometry>
-```
 
 #### Clone
 
